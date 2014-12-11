@@ -17,5 +17,5 @@ function show($filename) {
 /**
  * 入力ファイル
  */
-show(__DIR__ . '/music.csv');
+show(__DIR__ . '/music.txt');
 show(__DIR__ . '/music.xml');

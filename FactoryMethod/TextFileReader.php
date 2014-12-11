@@ -5,9 +5,9 @@ use DoYouPhp\PhpDesignPattern\FactoryMethod\Reader;
 
 
 /**
- * CSVファイルの読み込みを行うクラス
+ * テキストCSVファイルの読み込みを行うクラス
  */
-class CSVFileReader implements Reader
+class TextFileReader implements Reader
 {
     /**
      * 内容を表示するファイル名
@@ -46,14 +46,6 @@ class CSVFileReader implements Reader
     }
 
     /**
-     * 文字コードの変換を行う
-     */
-    private function convert($str)
-    {
-        return mb_convert_encoding($str, mb_internal_encoding(), 'sjis-win');
-    }
-
-    /**
      * 表示を行う
      */
     public function display()
@@ -61,37 +53,34 @@ class CSVFileReader implements Reader
         $prev_artist = null;
         $titles = [];
 
-        /**
-         * Linux環境の場合、事前に適宜setlocale関数を使用して
-         * ロケールを設定してください
-         * 例）setlocale(LC_ALL, 'ja_JP.sjis');
-         */
-        while ($data = fgetcsv($this->handler, 4096, ',')) {
+        while (($buffer = fgets($this->handler, 4096)) !== false) {
+            $data = explode("\t", trim($buffer));
             if (count($data) !== 2) {
                 continue;
             }
             list($artist, $title) = $data;
+            if ($prev_artist === null) {
+                $prev_artist = $artist;
+            }
             if ($artist !== $prev_artist) {
-                $this->displayTitles($titles);
+                $this->displayDetail($prev_artist, $titles);
 
                 $prev_artist = $artist;
-                echo $this->convert($prev_artist) . PHP_EOL;
                 $titles = [];
             }
             $titles[] = $title;
         }
 
         if (count($titles) > 0) {
-            $this->displayTitles($titles);
+            $this->displayDetail($prev_artist, $titles);
         }
-
-        fclose($this->handler);
     }
 
-    private function displayTitles(array $titles = [])
+    private function displayDetail($artist, array $titles = [])
     {
+        printf('%s%s', $artist, PHP_EOL);
         printf('-->%s%s',
-            $this->convert(implode(PHP_EOL . "-->", $titles)),
+            implode(PHP_EOL . "-->", $titles),
             count($titles) > 0 ? PHP_EOL : null);
     }
 }

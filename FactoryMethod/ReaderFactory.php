@@ -2,7 +2,7 @@
 namespace DoYouPhp\PhpDesignPattern\FactoryMethod;
 
 use DoYouPhp\PhpDesignPattern\FactoryMethod\Reader;
-use DoYouPhp\PhpDesignPattern\FactoryMethod\CSVFileReader;
+use DoYouPhp\PhpDesignPattern\FactoryMethod\TextFileReader;
 use DoYouPhp\PhpDesignPattern\FactoryMethod\XMLFileReader;
 
 
@@ -26,11 +26,11 @@ class ReaderFactory
      */
     private function createReader($filename)
     {
-        $poscsv = stripos($filename, '.csv');
+        $postxt = stripos($filename, '.txt');
         $posxml = stripos($filename, '.xml');
 
-        if ($poscsv !== false) {
-            $r = new CSVFileReader($filename);
+        if ($postxt !== false) {
+            $r = new TextFileReader($filename);
 
             return $r;
         } elseif ($posxml !== false) {
