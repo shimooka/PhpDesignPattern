@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Iterator;
+namespace DoYouPhp\PhpDesignPattern\Iterator\ConcreteAggregate;
 
-use DoYouPhp\PhpDesignPattern\Iterator\Employee;
+use DoYouPhp\PhpDesignPattern\Iterator\Model\Employee;
 
 
 class Employees implements \IteratorAggregate
@@ -17,6 +17,10 @@ class Employees implements \IteratorAggregate
     }
     public function getIterator()
     {
+        /**
+         * \ArrayObjectのgetIteratorメソッドを使って
+         * イテレータを取得して返す
+         */
         return $this->employees->getIterator();
     }
 }

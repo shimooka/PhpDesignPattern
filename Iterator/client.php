@@ -3,9 +3,9 @@ namespace DoYouPhp\PhpDesignPattern\Iterator;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\Iterator\Employee;
-use DoYouPhp\PhpDesignPattern\Iterator\Employees;
-use DoYouPhp\PhpDesignPattern\Iterator\SalesmanIterator;
+use DoYouPhp\PhpDesignPattern\Iterator\Model\Employee;
+use DoYouPhp\PhpDesignPattern\Iterator\ConcreteAggregate\Employees;
+use DoYouPhp\PhpDesignPattern\Iterator\ConcreteIterator\SalesmanIterator;
 
 
 function dumpWithForeach(\Iterator $iterator) {
@@ -31,7 +31,7 @@ $iterator = $employees->getIterator();
 /**
  * Iteratorのメソッドを利用する
  */
-echo 'Iteratorのメソッドを利用する' . PHP_EOL;
+echo '■Iteratorのメソッドを利用する' . PHP_EOL;
 while ($iterator->valid()) {
     $employee = $iterator->current();
     printf('%s (%d, %s)%s',
@@ -46,11 +46,11 @@ while ($iterator->valid()) {
 /**
  * foreach文を利用する
  */
-echo 'foreach文を利用する' . PHP_EOL;
+echo '■foreach文を利用する' . PHP_EOL;
 dumpWithForeach($iterator);
 
 /**
  * 異なるiteratorで要素を取得する
  */
-echo '異なるiteratorで要素を取得する' . PHP_EOL;
+echo '■異なるiteratorで要素を取得する' . PHP_EOL;
 dumpWithForeach(new SalesmanIterator($iterator));

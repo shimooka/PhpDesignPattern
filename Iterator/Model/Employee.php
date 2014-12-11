@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Iterator;
+namespace DoYouPhp\PhpDesignPattern\Iterator\Model;
 
 class Employee
 {

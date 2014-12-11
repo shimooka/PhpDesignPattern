@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Iterator;
+namespace DoYouPhp\PhpDesignPattern\Iterator\ConcreteIterator;
 
-use DoYouPhp\PhpDesignPattern\Iterator\Employee;
+use DoYouPhp\PhpDesignPattern\Iterator\Model\Employee;
 
 
 class SalesmanIterator extends \FilterIterator
