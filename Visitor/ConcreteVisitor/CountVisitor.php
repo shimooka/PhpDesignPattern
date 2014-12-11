@@ -1,8 +1,8 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Visitor;
+namespace DoYouPhp\PhpDesignPattern\Visitor\ConcreteVisitor;
 
-use DoYouPhp\PhpDesignPattern\Visitor\Visitor;
-
+use DoYouPhp\PhpDesignPattern\Visitor\Visitor\Visitor;
+use DoYouPhp\PhpDesignPattern\Visitor\Element\OrganizationEntry;
 
 class CountVisitor implements Visitor
 {
@@ -11,7 +11,7 @@ class CountVisitor implements Visitor
 
     public function visit(OrganizationEntry $entry)
     {
-        if (get_class($entry) === 'Group') {
+        if ($entry instanceof \DoYouPhp\PhpDesignPattern\Visitor\ConcreteElement\Group) {
             $this->group_count++;
         } else {
             $this->employee_count++;

@@ -1,8 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Visitor;
+namespace DoYouPhp\PhpDesignPattern\Visitor\ConcreteElement;
 
-use DoYouPhp\PhpDesignPattern\Visitor\OrganizationEntry;
-
+use DoYouPhp\PhpDesignPattern\Visitor\Element\OrganizationEntry;
 
 /**
  * Compositeクラスに相当する

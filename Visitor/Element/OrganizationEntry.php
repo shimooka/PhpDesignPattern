@@ -1,8 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Visitor;
+namespace DoYouPhp\PhpDesignPattern\Visitor\Element;
 
-use DoYouPhp\PhpDesignPattern\Visitor\Visitor;
-
+use DoYouPhp\PhpDesignPattern\Visitor\Visitor\Visitor;
 
 /**
  * Componentクラスに相当する

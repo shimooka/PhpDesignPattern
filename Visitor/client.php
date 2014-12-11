@@ -1,13 +1,12 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Visitor;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\Visitor\Group;
-use DoYouPhp\PhpDesignPattern\Visitor\Employee;
-use DoYouPhp\PhpDesignPattern\Visitor\DumpVisitor;
-use DoYouPhp\PhpDesignPattern\Visitor\CountVisitor;
-
+use DoYouPhp\PhpDesignPattern\Visitor\ConcreteElement\Group;
+use DoYouPhp\PhpDesignPattern\Visitor\ConcreteElement\Employee;
+use DoYouPhp\PhpDesignPattern\Visitor\ConcreteVisitor\DumpVisitor;
+use DoYouPhp\PhpDesignPattern\Visitor\ConcreteVisitor\CountVisitor;
 
     /**
      * 木構造を作成
@@ -43,5 +42,5 @@ use DoYouPhp\PhpDesignPattern\Visitor\CountVisitor;
      */
     $visitor = new CountVisitor();
     $root_entry->accept($visitor);
-    echo '組織数：'.$visitor->getGroupCount().'<br>';
-    echo '社員数：'.$visitor->getEmployeeCount().'<br>';
+    echo '組織数：'.$visitor->getGroupCount().PHP_EOL;
+    echo '社員数：'.$visitor->getEmployeeCount().PHP_EOL;
