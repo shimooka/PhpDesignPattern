@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Singleton;
+namespace DoYouPhp\PhpDesignPattern\Singleton\Singleton;
 
 class SingletonSample {
 

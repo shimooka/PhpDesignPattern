@@ -1,9 +1,9 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Singleton;
+namespace DoYouPhp\PhpDesignPattern\Singleton\Singleton;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\Singleton\SingletonSample;
+use DoYouPhp\PhpDesignPattern\Singleton\Singleton\SingletonSample;
 
 
 /**
@@ -11,8 +11,6 @@ use DoYouPhp\PhpDesignPattern\Singleton\SingletonSample;
  */
 $instance1 = SingletonSample::getInstance();
 $instance2 = SingletonSample::getInstance();
-
-echo '<hr>';
 
 /**
  * 2つのインスタンスが同一IDかどうかを確認する
