@@ -1,5 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Strategy;
+namespace DoYouPhp\PhpDesignPattern\Strategy\Context;
+
+use DoYouPhp\PhpDesignPattern\Strategy\Strategy\ReadItemDataStrategy;
 
 /**
  * Contextに相当する

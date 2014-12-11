@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Strategy;
+namespace DoYouPhp\PhpDesignPattern\Strategy\Strategy;
 
 /**
  * Strategyに相当する

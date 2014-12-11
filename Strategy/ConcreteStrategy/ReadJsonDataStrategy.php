@@ -1,8 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Strategy;
+namespace DoYouPhp\PhpDesignPattern\Strategy\ConcreteStrategy;
 
-use DoYouPhp\PhpDesignPattern\Strategy\ReadItemDataStrategy;
-
+use DoYouPhp\PhpDesignPattern\Strategy\Strategy\ReadItemDataStrategy;
 
 /**
  * JSONデータを読み込む

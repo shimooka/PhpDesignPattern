@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Strategy;
+namespace DoYouPhp\PhpDesignPattern\Strategy\Context;
 
 /**
  * Contextに相当する
