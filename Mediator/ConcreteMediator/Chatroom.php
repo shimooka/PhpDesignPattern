@@ -1,11 +1,14 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Mediator;
+namespace DoYouPhp\PhpDesignPattern\Mediator\ConcreteMediator;
 
-use DoYouPhp\PhpDesignPattern\Mediator\User;
+use DoYouPhp\PhpDesignPattern\Mediator\ConcreteColleague\User;
 
 
 class Chatroom
 {
+    /**
+     * 管理するユーザー(Colleague)
+     */
     private $users = array();
     public function login(User $user)
     {
@@ -17,6 +20,9 @@ class Chatroom
     }
     public function sendMessage($from, $to, $message)
     {
+        /**
+         * メッセージのルーティング(誰から誰へ)をMediatorが管理する
+         */
         if (array_key_exists($to, $this->users)) {
             $this->users[$to]->receiveMessage($from, $message);
         } else {

@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Mediator;
+namespace DoYouPhp\PhpDesignPattern\Mediator\ConcreteColleague;
 
-use DoYouPhp\PhpDesignPattern\Mediator\Chatroom;
+use DoYouPhp\PhpDesignPattern\Mediator\ConcreteMediator\Chatroom;
 
 
 class User
@@ -26,6 +26,9 @@ class User
     }
     public function sendMessage($to, $message)
     {
+        /**
+         * メッセージのルーティング(誰から誰へ)はMediatorにお願いしている
+         */
         $this->chatroom->sendMessage($this->name, $to, $message);
     }
     public function receiveMessage($from, $message)
