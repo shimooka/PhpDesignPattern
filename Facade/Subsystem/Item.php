@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Facade;
+namespace DoYouPhp\PhpDesignPattern\Facade\Subsystem;
 
 class Item
 {

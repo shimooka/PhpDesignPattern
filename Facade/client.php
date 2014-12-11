@@ -3,10 +3,10 @@ namespace DoYouPhp\PhpDesignPattern\Facade;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\Facade\Order;
-use DoYouPhp\PhpDesignPattern\Facade\OrderItem;
-use DoYouPhp\PhpDesignPattern\Facade\ItemDao;
-use DoYouPhp\PhpDesignPattern\Facade\OrderManager;
+use DoYouPhp\PhpDesignPattern\Facade\Subsystem\Order;
+use DoYouPhp\PhpDesignPattern\Facade\Subsystem\OrderItem;
+use DoYouPhp\PhpDesignPattern\Facade\Subsystem\ItemDao;
+use DoYouPhp\PhpDesignPattern\Facade\Facade\OrderManager;
 
 
 $order = new Order();

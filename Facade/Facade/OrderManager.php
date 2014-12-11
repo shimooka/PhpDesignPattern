@@ -1,9 +1,9 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Facade;
+namespace DoYouPhp\PhpDesignPattern\Facade\Facade;
 
-use DoYouPhp\PhpDesignPattern\Facade\Order;
-use DoYouPhp\PhpDesignPattern\Facade\ItemDao;
-use DoYouPhp\PhpDesignPattern\Facade\OrderDao;
+use DoYouPhp\PhpDesignPattern\Facade\Subsystem\Order;
+use DoYouPhp\PhpDesignPattern\Facade\Subsystem\ItemDao;
+use DoYouPhp\PhpDesignPattern\Facade\Subsystem\OrderDao;
 
 
 class OrderManager

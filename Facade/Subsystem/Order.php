@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Facade;
+namespace DoYouPhp\PhpDesignPattern\Facade\Subsystem;
 
-use DoYouPhp\PhpDesignPattern\Facade\OrderItem;
+use DoYouPhp\PhpDesignPattern\Facade\Subsystem\OrderItem;
 
 
 class Order
