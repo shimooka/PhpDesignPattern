@@ -9,12 +9,13 @@ use DoYouPhp\PhpDesignPattern\Bridge\ConcreteImplementor\FileDataSource;
 
 
 /**
- * Listingクラス、ExtendedListingクラスをインスタンス化する。
- * 具体的な処理クラスとして、FileDataSourceクラスを使う。
- * データファイルは、data.txt
+ * データを読み込むDataSourceを準備する
  */
 $source = new FileDataSource(__DIR__ . '/data.txt');
 
+/**
+ * Listingクラスを使ってデータを表示する
+ */
 echo '■Listingクラス' . PHP_EOL;
 $list = new Listing($source);
 $list->open();
@@ -22,7 +23,9 @@ $data = $list->read();
 echo $data . PHP_EOL;
 $list->close();
 
-
+/**
+ * ExtendedListingクラスを使ってデータを表示する
+ */
 echo '■ExtendedListingクラス' . PHP_EOL;
 $list = new ExtendedListing($source);
 $list->open();
