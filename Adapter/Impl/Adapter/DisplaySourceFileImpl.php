@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Adapter\Impl;
+namespace DoYouPhp\PhpDesignPattern\Adapter\Impl\Adapter;
 
-use DoYouPhp\PhpDesignPattern\Adapter\Impl\DisplaySourceFile;
+use DoYouPhp\PhpDesignPattern\Adapter\Impl\Target\DisplaySourceFile;
 use DoYouPhp\PhpDesignPattern\Adapter\ShowFile;
 
 

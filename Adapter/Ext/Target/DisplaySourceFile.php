@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Adapter\Ext;
+namespace DoYouPhp\PhpDesignPattern\Adapter\Ext\Target;
 
 interface DisplaySourceFile
 {

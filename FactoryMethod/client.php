@@ -3,7 +3,7 @@ namespace DoYouPhp\PhpDesignPattern\FactoryMethod;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\FactoryMethod\ReaderFactory;
+use DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteCreator\ReaderFactory;
 
 function show($filename) {
     echo $filename . PHP_EOL;

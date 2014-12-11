@@ -1,9 +1,9 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\FactoryMethod;
+namespace DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteCreator;
 
-use DoYouPhp\PhpDesignPattern\FactoryMethod\Reader;
-use DoYouPhp\PhpDesignPattern\FactoryMethod\TextFileReader;
-use DoYouPhp\PhpDesignPattern\FactoryMethod\XMLFileReader;
+use DoYouPhp\PhpDesignPattern\FactoryMethod\Producr\Reader;
+use DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteProduct\TextFileReader;
+use DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteProduct\XMLFileReader;
 
 
 /**

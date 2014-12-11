@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\FactoryMethod;
+namespace DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteProduct;
 
-use DoYouPhp\PhpDesignPattern\FactoryMethod\Reader;
+use DoYouPhp\PhpDesignPattern\FactoryMethod\Product\Reader;
 
 
 /**
