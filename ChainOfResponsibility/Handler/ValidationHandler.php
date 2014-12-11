@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\ChainOfResponsibility;
+namespace DoYouPhp\PhpDesignPattern\ChainOfResponsibility\Handler;
 
 /**
  * Handlerクラスに相当する

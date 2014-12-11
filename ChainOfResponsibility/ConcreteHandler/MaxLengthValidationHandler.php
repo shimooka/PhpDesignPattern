@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\ChainOfResponsibility;
+namespace DoYouPhp\PhpDesignPattern\ChainOfResponsibility\ConcreteHandler;
 
-use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\ValidationHandler;
+use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\Handler\ValidationHandler;
 
 
 /**

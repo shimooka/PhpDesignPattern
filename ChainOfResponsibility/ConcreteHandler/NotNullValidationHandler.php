@@ -1,20 +1,20 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\ChainOfResponsibility;
+namespace DoYouPhp\PhpDesignPattern\ChainOfResponsibility\ConcreteHandler;
 
-use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\ValidationHandler;
+use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\Handler\ValidationHandler;
 
 
 /**
  * ConcreteHandlerクラスに相当する
  */
-class NumberValidationHandler extends ValidationHandler
+class NotNullValidationHandler extends ValidationHandler
 {
     /**
      * 自クラスが担当する処理を実行
      */
     protected function execValidation($input)
     {
-        return (preg_match('/^[0-9]*$/', $input) > 0);
+        return (is_string($input) && $input !== '');
     }
 
     /**
@@ -22,6 +22,6 @@ class NumberValidationHandler extends ValidationHandler
      */
     protected function getErrorMessage()
     {
-        return '半角数字で入力してください';
+        return '入力されていません';
     }
 }

@@ -3,8 +3,8 @@ namespace DoYouPhp\PhpDesignPattern\ChainOfResponsibility;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\MaxLengthValidationHandler;
-use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\NotNullValidationHandler;
+use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\ConcreteHandler\MaxLengthValidationHandler;
+use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\ConcreteHandler\NotNullValidationHandler;
 
 function validate($input, $type)
 {
@@ -17,12 +17,10 @@ function validate($input, $type)
 
     switch ($type) {
     case 1:
-        include_once 'AlphabetValidationHandler.php';
-        $handler->setHandler(new AlphabetValidationHandler());
+        $handler->setHandler(new ConcreteHandler\AlphabetValidationHandler());
         break;
     case 2:
-        include_once 'NumberValidationHandler.php';
-        $handler->setHandler(new NumberValidationHandler());
+        $handler->setHandler(new ConcreteHandler\NumberValidationHandler());
         break;
     }
 
