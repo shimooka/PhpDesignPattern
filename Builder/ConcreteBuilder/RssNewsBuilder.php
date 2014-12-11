@@ -1,8 +1,8 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Builder\ConcreteBuilder;
 
-use DoYouPhp\PhpDesignPattern\Builder\Model\News;
 use DoYouPhp\PhpDesignPattern\Builder\Builder\NewsBuilder;
+use DoYouPhp\PhpDesignPattern\Builder\Model\News;
 
 /**
  * ConcreteBuilderクラスに相当する
