@@ -4,7 +4,6 @@ namespace DoYouPhp\PhpDesignPattern\Adapter\Ext\Adapter;
 use DoYouPhp\PhpDesignPattern\Adapter\Ext\Target\DisplaySourceFile;
 use DoYouPhp\PhpDesignPattern\Adapter\ShowFile;
 
-
 /**
  * DisplaySourceFileを実装したクラス
  */
