@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Command;
+namespace DoYouPhp\PhpDesignPattern\Command\Invoker;
 
-use DoYouPhp\PhpDesignPattern\Command\Command;
+use DoYouPhp\PhpDesignPattern\Command\Command\Command;
 
 
 /**

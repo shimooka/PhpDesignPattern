@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Command;
+namespace DoYouPhp\PhpDesignPattern\Command\Receiver;
 
 /**
  * Receiverクラスに相当する
