@@ -1,9 +1,8 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Proxy;
+namespace DoYouPhp\PhpDesignPattern\Proxy\RealSubject;
 
-use DoYouPhp\PhpDesignPattern\Proxy\ItemDao;
-use DoYouPhp\PhpDesignPattern\Proxy\Item;
-
+use DoYouPhp\PhpDesignPattern\Proxy\Subject\ItemDao;
+use DoYouPhp\PhpDesignPattern\Proxy\Model\Item;
 
 class MockItemDao implements ItemDao
 {

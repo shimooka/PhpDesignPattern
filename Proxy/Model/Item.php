@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Proxy;
+namespace DoYouPhp\PhpDesignPattern\Proxy\Model;
 
 class Item
 {

@@ -1,12 +1,17 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Proxy;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
-function execute(ItemDao $dao, $use_proxy = false) {
+use DoYouPhp\PhpDesignPattern\Proxy\Subject\ItemDao;
+use DoYouPhp\PhpDesignPattern\Proxy\RealSubject\DbItemDao;
+use DoYouPhp\PhpDesignPattern\Proxy\RealSubject\MockItemDao;
+use DoYouPhp\PhpDesignPattern\Proxy\Proxy\ItemDaoProxy;
+
+function execute(ItemDao $dao, $use_proxy = false)
+{
     if ($use_proxy === true) {
-        include_once 'ItemDaoProxy.php';
-        $dao = new ItemDaoProxy($dao);
+        $dao = new Proxy\ItemDaoProxy($dao);
     }
 
     for ($item_id = 1; $item_id <= 3; $item_id++) {
@@ -22,15 +27,14 @@ function execute(ItemDao $dao, $use_proxy = false) {
     printf('ID=%sの商品は「%s」です%s', $item_id, $item->getName(), PHP_EOL);
 }
 
-
-echo 'DbItemDao＋Proxyなし' . PHP_EOL;
+echo '■DbItemDao＋Proxyなし'.PHP_EOL;
 execute(new DbItemDao());
 
-echo 'MockItemDao＋Proxyなし' . PHP_EOL;
+echo '■MockItemDao＋Proxyなし'.PHP_EOL;
 execute(new MockItemDao());
 
-echo 'DbItemDao＋Proxyあり' . PHP_EOL;
+echo '■DbItemDao＋Proxyあり'.PHP_EOL;
 execute(new DbItemDao(), true);
 
-echo 'MockItemDao＋Proxyあり' . PHP_EOL;
+echo '■MockItemDao＋Proxyあり'.PHP_EOL;
 execute(new MockItemDao(), true);
