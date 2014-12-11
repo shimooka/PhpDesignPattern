@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\ChainOfResponsibility\ConcreteHandler;
 
 use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\Handler\ValidationHandler;
 
-
 /**
  * ConcreteHandlerクラスに相当する
  */

@@ -1,7 +1,7 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\ChainOfResponsibility;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
 use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\ConcreteHandler\MaxLengthValidationHandler;
 use DoYouPhp\PhpDesignPattern\ChainOfResponsibility\ConcreteHandler\NotNullValidationHandler;
@@ -27,13 +27,12 @@ function validate($input, $type)
     return $handler->validate($input);
 }
 
-
 $result = validate('ChainOfResponsibility', 1);
-echo ($result === false ? '検証できませんでした'
+echo($result === false ? '検証できませんでした'
     : ((is_string($result) && $result !== '') ? $result : 'OK'))
-    . PHP_EOL;
+    .PHP_EOL;
 
 $result = validate('Chain of responsibility', 2);
-echo ($result === false ? '検証できませんでした'
+echo($result === false ? '検証できませんでした'
     : ((is_string($result) && $result !== '') ? $result : 'OK'))
-    . PHP_EOL;
+    .PHP_EOL;
