@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Composite;
+namespace DoYouPhp\PhpDesignPattern\Composite\Leaf;
 
-use DoYouPhp\PhpDesignPattern\Composite\OrganizationEntry;
+use DoYouPhp\PhpDesignPattern\Composite\Component\OrganizationEntry;
 
 
 /**

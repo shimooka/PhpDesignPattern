@@ -3,9 +3,9 @@ namespace DoYouPhp\PhpDesignPattern\Decorator;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\Decorator\UpperCaseText;
-use DoYouPhp\PhpDesignPattern\Decorator\DoubleByteText;
-use DoYouPhp\PhpDesignPattern\Decorator\PlainText;
+use DoYouPhp\PhpDesignPattern\Decorator\ConcreteDecorator\UpperCaseText;
+use DoYouPhp\PhpDesignPattern\Decorator\ConcreteDecorator\DoubleByteText;
+use DoYouPhp\PhpDesignPattern\Decorator\ConcreteComponent\PlainText;
 
 
 function decorate($text, array $decorate = []) {

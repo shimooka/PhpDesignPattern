@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Decorator;
+namespace DoYouPhp\PhpDesignPattern\Decorator\Component;
 
 /**
  * テキストを扱うインターフェースクラスです

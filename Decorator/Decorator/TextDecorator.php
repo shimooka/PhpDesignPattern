@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Decorator;
+namespace DoYouPhp\PhpDesignPattern\Decorator\Decorator;
 
-use DoYouPhp\PhpDesignPattern\Decorator\Text;
+use DoYouPhp\PhpDesignPattern\Decorator\Component\Text;
 
 
 /**

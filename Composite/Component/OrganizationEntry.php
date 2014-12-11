@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Composite;
+namespace DoYouPhp\PhpDesignPattern\Composite\Component;
 
 /**
  * Componentクラスに相当する
