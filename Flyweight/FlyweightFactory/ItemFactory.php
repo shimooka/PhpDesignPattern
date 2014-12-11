@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Flyweight;
+namespace DoYouPhp\PhpDesignPattern\Flyweight\FlyweightFactory;
 
-use DoYouPhp\PhpDesignPattern\Flyweight\Item;
+use DoYouPhp\PhpDesignPattern\Flyweight\ConcreteFlyweight\Item;
 
 
 /**

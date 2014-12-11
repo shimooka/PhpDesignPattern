@@ -3,7 +3,7 @@ namespace DoYouPhp\PhpDesignPattern\Flyweight;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\Flyweight\ItemFactory;
+use DoYouPhp\PhpDesignPattern\Flyweight\FlyweightFactory\ItemFactory;
 
 
 function dumpData($data)

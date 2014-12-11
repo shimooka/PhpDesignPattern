@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Flyweight;
+namespace DoYouPhp\PhpDesignPattern\Flyweight\ConcreteFlyweight;
 
 /**
  * FlyweightとConcreteFlyweightに相当する
