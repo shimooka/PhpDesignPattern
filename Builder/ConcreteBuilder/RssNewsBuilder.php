@@ -1,8 +1,8 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Builder;
+namespace DoYouPhp\PhpDesignPattern\Builder\ConcreteBuilder;
 
-use DoYouPhp\PhpDesignPattern\Builder\News;
-use DoYouPhp\PhpDesignPattern\Builder\NewsBuilder;
+use DoYouPhp\PhpDesignPattern\Builder\Model\News;
+use DoYouPhp\PhpDesignPattern\Builder\Builder\NewsBuilder;
 
 
 /**
@@ -12,6 +12,9 @@ class RssNewsBuilder implements NewsBuilder
 {
     public function parse($url)
     {
+        /**
+         * RSSファイルを読み込み、SimpleXMLで扱えるようにする
+         */
         $data = simplexml_load_file($url);
         if ($data === false) {
             throw new \Exception('read data ['.
@@ -19,6 +22,10 @@ class RssNewsBuilder implements NewsBuilder
                                 .'] failed !');
         }
 
+        /**
+         * RSSのそれぞれの記事をNewsオブジェクトに変換し、
+         * 「Newsオブジェクトの配列」として返す
+         */
         $list = array();
         foreach ($data->item as $item) {
             $dc = $item->children('http://purl.org/dc/elements/1.1/');

@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Builder;
+namespace DoYouPhp\PhpDesignPattern\Builder\Builder;
 
 /**
  * Builderクラスに相当する

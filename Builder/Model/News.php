@@ -1,6 +1,9 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Builder;
+namespace DoYouPhp\PhpDesignPattern\Builder\Model;
 
+/**
+ * RSS内の1つの記事を表すクラス
+ */
 class News
 {
     private $title;

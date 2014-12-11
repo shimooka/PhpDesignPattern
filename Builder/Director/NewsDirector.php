@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Builder;
+namespace DoYouPhp\PhpDesignPattern\Builder\Director;
 
-use DoYouPhp\PhpDesignPattern\Builder\NewsBuilder;
+use DoYouPhp\PhpDesignPattern\Builder\Builder\NewsBuilder;
 
 
 /**
