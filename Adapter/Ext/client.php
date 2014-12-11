@@ -3,7 +3,7 @@ namespace DoYouPhp\PhpDesignPattern\Adapter\Ext;
 
 require dirname(dirname(__DIR__)) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\Adapter\Ext\DisplaySourceFileImpl;
+use DoYouPhp\PhpDesignPattern\Adapter\Ext\Adapter\DisplaySourceFileImpl;
 
 
 /**
