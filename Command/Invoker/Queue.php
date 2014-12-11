@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Command\Invoker;
 
 use DoYouPhp\PhpDesignPattern\Command\Command\Command;
 
-
 /**
  * Invokerクラスに相当する
  */

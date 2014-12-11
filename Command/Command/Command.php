@@ -4,6 +4,7 @@ namespace DoYouPhp\PhpDesignPattern\Command\Command;
 /**
  * Commandクラスに相当する
  */
-interface Command {
+interface Command
+{
     public function execute();
 }

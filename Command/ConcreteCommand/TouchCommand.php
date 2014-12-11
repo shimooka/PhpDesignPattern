@@ -4,7 +4,6 @@ namespace DoYouPhp\PhpDesignPattern\Command\ConcreteCommand;
 use DoYouPhp\PhpDesignPattern\Command\Command\Command;
 use DoYouPhp\PhpDesignPattern\Command\Receiver\File;
 
-
 /**
  * ConcreteCommandクラスに相当する
  */
