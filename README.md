@@ -11,6 +11,6 @@ PHPによるデザインパターン入門(ISBN4-7980-1516-4)のサンプルコ�
 
 TODO
 ====
--Memento
--Observer
--State
+- Memento
+- Observer
+- State
