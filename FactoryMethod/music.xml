@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<artists>
+  <artist name="ルートヴィヒ・ヴァン・ベートーヴェン">
+    <music name="ピアノソナタ第23番ヘ短調「熱情」"/>
+  </artist>
+  <artist name="ヴォルフガング・アマデウス・モーツァルト">
+    <music name="魔笛"/>
+    <music name="セレナーデト長調 K.525「小夜曲」"/>
+  </artist>
+  <artist name="アントニン・ドヴォルザーク">
+    <music name="交響曲第9番ホ短調「新世界より」"/>
+  </artist>
+</artists>

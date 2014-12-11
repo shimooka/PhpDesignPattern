@@ -1,0 +1,20 @@
+[
+  {
+    "item_name":"限定Ｔシャツ",
+    "item_id":"ABC0001",
+    "price":"3800",
+    "release_date":"2006\/3\/11"
+  },
+  {
+    "item_name":"ぬいぐるみ",
+    "item_id":"ABC0002",
+    "price":"1500",
+    "release_date":"2005\/12\/1"
+  },
+  {
+    "item_name":"クッキーセット",
+    "item_id":"ABC0003",
+    "price":"800",
+    "release_date":"2006\/5\/20"
+  }
+]
