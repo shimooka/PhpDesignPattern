@@ -1,11 +1,10 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Mediator;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
 use DoYouPhp\PhpDesignPattern\Mediator\ConcreteMediator\Chatroom;
 use DoYouPhp\PhpDesignPattern\Mediator\ConcreteColleague\User;
-
 
     $chatroom = new Chatroom();
 

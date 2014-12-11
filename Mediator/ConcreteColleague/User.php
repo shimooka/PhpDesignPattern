@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Mediator\ConcreteColleague;
 
 use DoYouPhp\PhpDesignPattern\Mediator\ConcreteMediator\Chatroom;
 
-
 class User
 {
     private $chatroom;
