@@ -3,14 +3,16 @@ namespace DoYouPhp\PhpDesignPattern\Interpreter;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\Interpreter\Context;
-use DoYouPhp\PhpDesignPattern\Interpreter\Command;
-use DoYouPhp\PhpDesignPattern\Interpreter\CommandCommand;
-use DoYouPhp\PhpDesignPattern\Interpreter\CommandListCommand;
-use DoYouPhp\PhpDesignPattern\Interpreter\JobCommand;
+use DoYouPhp\PhpDesignPattern\Interpreter\Context\Context;
+use DoYouPhp\PhpDesignPattern\Interpreter\AbstractExpression\Command;
+use DoYouPhp\PhpDesignPattern\Interpreter\TerminalExpression\CommandCommand;
+use DoYouPhp\PhpDesignPattern\Interpreter\NonterminalExpression\CommandListCommand;
+use DoYouPhp\PhpDesignPattern\Interpreter\NonterminalExpression\JobCommand;
 
 function execute($command)
 {
+    echo '■' . $command . PHP_EOL;
+
     $job = new JobCommand();
     try {
         $job->execute(new Context($command));

@@ -1,5 +1,9 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Interpreter;
+namespace DoYouPhp\PhpDesignPattern\Interpreter\NonterminalExpression;
+
+use DoYouPhp\PhpDesignPattern\Interpreter\AbstractExpression\Command;
+use DoYouPhp\PhpDesignPattern\Interpreter\Context\Context;
+use DoYouPhp\PhpDesignPattern\Interpreter\TerminalExpression\CommandCommand;
 
 class CommandListCommand implements Command
 {

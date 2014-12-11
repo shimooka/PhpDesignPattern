@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Interpreter;
+namespace DoYouPhp\PhpDesignPattern\Interpreter\Context;
 
 class Context
 {

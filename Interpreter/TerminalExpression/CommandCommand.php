@@ -1,5 +1,8 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Interpreter;
+namespace DoYouPhp\PhpDesignPattern\Interpreter\TerminalExpression;
+
+use DoYouPhp\PhpDesignPattern\Interpreter\AbstractExpression\Command;
+use DoYouPhp\PhpDesignPattern\Interpreter\Context\Context;
 
 class CommandCommand implements Command
 {
