@@ -1,8 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Prototype;
+namespace DoYouPhp\PhpDesignPattern\Prototype\ConcretePrototype;
 
-use DoYouPhp\PhpDesignPattern\Prototype\ItemPrototype;
-
+use DoYouPhp\PhpDesignPattern\Prototype\Prototype\ItemPrototype;
 
 /**
  * ConcretePrototypeクラスに相当する

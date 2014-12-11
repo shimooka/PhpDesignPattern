@@ -1,8 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Prototype;
+namespace DoYouPhp\PhpDesignPattern\Prototype\ConcretePrototype;
 
-use DoYouPhp\PhpDesignPattern\Prototype\ItemPrototype;
-
+use DoYouPhp\PhpDesignPattern\Prototype\Prototype\ItemPrototype;
 
 /**
  * ConcretePrototypeクラスに相当する
@@ -32,12 +31,10 @@ class ItemA extends ItemPrototype
 
     public function dumpData()
     {
-        echo '<dl>';
-        echo '<dt>'.$this->getName().'</dt>';
-        echo '<dd>商品番号：'.$this->getCode().'</dd>';
-        echo '<dd>\\'.number_format($this->getPrice()).'-</dd>';
-        echo '<dd>'.$this->detail->comment.'</dd>';
-        echo '<dd>'.$this->detail->create_date.'</dd>';
-        echo '</dl>';
+        echo $this->getName().PHP_EOL;
+        echo '商品番号：'.$this->getCode().PHP_EOL;
+        echo '\\'.number_format($this->getPrice()).PHP_EOL;
+        echo $this->detail->comment.PHP_EOL;
+        echo $this->detail->create_date.PHP_EOL;
     }
 }
