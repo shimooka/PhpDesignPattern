@@ -1,13 +1,9 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Bridge;
+namespace DoYouPhp\PhpDesignPattern\Bridge\ConcreteImplementor;
 
-use DoYouPhp\PhpDesignPattern\Bridge\DataSource;
+use DoYouPhp\PhpDesignPattern\Bridge\Implementor\DataSource;
 
 
-/**
- * Implementorクラスで定義されている機能を実装する
- * ConcreteImplementorに相当する
- */
 class FileDataSource implements DataSource
 {
     /**
@@ -55,7 +51,7 @@ class FileDataSource implements DataSource
             $buffer[] = fgets($this->handler);
         }
 
-        return join($buffer);
+        return trim(implode($buffer));
     }
 
     /**

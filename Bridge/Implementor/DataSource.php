@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Bridge;
+namespace DoYouPhp\PhpDesignPattern\Bridge\Implementor;
 
 /**
  * Implementorに相当する

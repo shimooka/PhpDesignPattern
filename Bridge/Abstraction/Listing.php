@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Bridge;
+namespace DoYouPhp\PhpDesignPattern\Bridge\Abstraction;
 
-use DoYouPhp\PhpDesignPattern\Bridge\DataSource;
+use DoYouPhp\PhpDesignPattern\Bridge\Implementor\DataSource;
 
 class Listing
 {

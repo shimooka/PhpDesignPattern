@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Bridge;
+namespace DoYouPhp\PhpDesignPattern\Bridge\RefinedAbstraction;
 
-use DoYouPhp\PhpDesignPattern\Bridge\Listing;
+use DoYouPhp\PhpDesignPattern\Bridge\Abstraction\Listing;
 
 
 /**
