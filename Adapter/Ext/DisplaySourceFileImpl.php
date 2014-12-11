@@ -2,7 +2,7 @@
 namespace DoYouPhp\PhpDesignPattern\Adapter\Ext;
 
 use DoYouPhp\PhpDesignPattern\Adapter\Ext\DisplaySourceFile;
-use DoYouPhp\PhpDesignPattern\Adapter\Ext\ShowFile;
+use DoYouPhp\PhpDesignPattern\Adapter\ShowFile;
 
 
 /**

@@ -6,14 +6,14 @@ require dirname(dirname(__DIR__)) . '/vendor/autoload.php';
 use DoYouPhp\PhpDesignPattern\Adapter\Impl\DisplaySourceFileImpl;
 
 
-    /**
-     * DisplaySourceFileImplクラスをインスタンス化する。
-     * 内容を表示するファイルは、「ShowFile.php」
-     */
-    $show_file = new DisplaySourceFileImpl(__DIR__ . '/ShowFile.php');
+/**
+ * DisplaySourceFileImplクラスをインスタンス化する。
+ * 内容を表示するファイルは、「ShowFile.php」
+ */
+$show_file = new DisplaySourceFileImpl(dirname(__DIR__) . '/ShowFile.php');
 
-    /**
-     * プレーンテキストとハイライトしたファイル内容をそれぞれ
-     * 表示する
-     */
-    $show_file->display();
+/**
+ * プレーンテキストとハイライトしたファイル内容をそれぞれ
+ * 表示する
+ */
+$show_file->display();

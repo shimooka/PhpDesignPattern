@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\Adapter\Impl;
+namespace DoYouPhp\PhpDesignPattern\Adapter;
 
 /**
  * 指定されたファイルの内容を表示するクラスです
@@ -32,9 +32,7 @@ class ShowFile
      */
     public function showPlain()
     {
-        echo '<pre>';
-        echo htmlspecialchars(file_get_contents($this->filename), ENT_QUOTES);
-        echo '</pre>';
+        echo file_get_contents($this->filename);
     }
 
     /**

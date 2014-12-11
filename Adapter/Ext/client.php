@@ -10,7 +10,7 @@ use DoYouPhp\PhpDesignPattern\Adapter\Ext\DisplaySourceFileImpl;
  * DisplaySourceFileImplクラスをインスタンス化する。
  * 内容を表示するファイルは、「ShowFile.php」
  */
-$show_file = new DisplaySourceFileImpl(__DIR__ . '/ShowFile.php');
+$show_file = new DisplaySourceFileImpl(dirname(__DIR__) . '/ShowFile.php');
 
 /**
  * プレーンテキストとハイライトしたファイル内容をそれぞれ
