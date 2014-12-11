@@ -1,14 +1,14 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Decorator;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
 use DoYouPhp\PhpDesignPattern\Decorator\ConcreteDecorator\UpperCaseText;
 use DoYouPhp\PhpDesignPattern\Decorator\ConcreteDecorator\DoubleByteText;
 use DoYouPhp\PhpDesignPattern\Decorator\ConcreteComponent\PlainText;
 
-
-function decorate($text, array $decorate = []) {
+function decorate($text, array $decorate = [])
+{
     $text_object = new PlainText();
     $text_object->setText($text);
 
@@ -22,7 +22,7 @@ function decorate($text, array $decorate = []) {
             break;
         }
     }
-    echo $text_object->getText() . PHP_EOL;
+    echo $text_object->getText().PHP_EOL;
 }
 
 $text = 'Hello, Decorator Pattern !!';

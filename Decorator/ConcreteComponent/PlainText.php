@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Decorator\ConcreteComponent;
 
 use DoYouPhp\PhpDesignPattern\Decorator\Component\Text;
 
-
 /**
  * 編集前のテキストを表すクラスです
  */

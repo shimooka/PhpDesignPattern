@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Decorator\Decorator;
 
 use DoYouPhp\PhpDesignPattern\Decorator\Component\Text;
 
-
 /**
  * Textクラスを修飾するDecoratorです
  */

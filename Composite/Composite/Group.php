@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Composite\Composite;
 
 use DoYouPhp\PhpDesignPattern\Composite\Component\OrganizationEntry;
 
-
 /**
  * Compositeクラスに相当する
  */

@@ -1,13 +1,12 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Facade;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
 use DoYouPhp\PhpDesignPattern\Facade\Subsystem\Order;
 use DoYouPhp\PhpDesignPattern\Facade\Subsystem\OrderItem;
 use DoYouPhp\PhpDesignPattern\Facade\Subsystem\ItemDao;
 use DoYouPhp\PhpDesignPattern\Facade\Facade\OrderManager;
-
 
 $order = new Order();
 $item_dao = ItemDao::getInstance();

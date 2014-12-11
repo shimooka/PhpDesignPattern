@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Composite\Leaf;
 
 use DoYouPhp\PhpDesignPattern\Composite\Component\OrganizationEntry;
 
-
 /**
  * Leafクラスに相当する
  */

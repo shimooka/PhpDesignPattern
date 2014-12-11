@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Bridge\RefinedAbstraction;
 
 use DoYouPhp\PhpDesignPattern\Bridge\Abstraction\Listing;
 
-
 /**
  * Listingクラスで提供されている機能を拡張する
  * RefinedAbstractionに相当する

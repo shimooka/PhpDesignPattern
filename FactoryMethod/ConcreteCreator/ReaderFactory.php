@@ -5,7 +5,6 @@ use DoYouPhp\PhpDesignPattern\FactoryMethod\Producr\Reader;
 use DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteProduct\TextFileReader;
 use DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteProduct\XMLFileReader;
 
-
 /**
  * Readerクラスのインスタンス生成を行うクラス
  */

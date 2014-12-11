@@ -1,7 +1,6 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Facade\Subsystem;
 
-use DoYouPhp\PhpDesignPattern\Facade\SubsystemOrderItem;
 
 
 class ItemDao
@@ -10,7 +9,7 @@ class ItemDao
     private $items;
     private function __construct()
     {
-        $fp = fopen(dirname(__DIR__) . '/item_data.txt', 'r');
+        $fp = fopen(dirname(__DIR__).'/item_data.txt', 'r');
 
         /**
          * ヘッダ行を抜く

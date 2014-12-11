@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Iterator\ConcreteAggregate;
 
 use DoYouPhp\PhpDesignPattern\Iterator\Model\Employee;
 
-
 class Employees implements \IteratorAggregate
 {
     private $employees;

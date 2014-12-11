@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteProduct;
 
 use DoYouPhp\PhpDesignPattern\FactoryMethod\Product\Reader;
 
-
 /**
  * テキストCSVファイルの読み込みを行うクラス
  */
@@ -80,7 +79,7 @@ class TextFileReader implements Reader
     {
         printf('%s%s', $artist, PHP_EOL);
         printf('-->%s%s',
-            implode(PHP_EOL . "-->", $titles),
+            implode(PHP_EOL."-->", $titles),
             count($titles) > 0 ? PHP_EOL : null);
     }
 }

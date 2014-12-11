@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteProduct;
 
 use DoYouPhp\PhpDesignPattern\FactoryMethod\Product\Reader;
 
-
 /**
  * XMLファイルの読み込みを行うクラス
  */
@@ -48,7 +47,7 @@ class XMLFileReader implements Reader
     public function display()
     {
         foreach ($this->handler->artist as $artist) {
-            echo $artist['name'] . PHP_EOL;
+            echo $artist['name'].PHP_EOL;
             foreach ($artist->music as $music) {
                 printf('-->%s%s', $music['name'], PHP_EOL);
             }

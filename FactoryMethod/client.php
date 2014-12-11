@@ -1,12 +1,13 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\FactoryMethod;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
 use DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteCreator\ReaderFactory;
 
-function show($filename) {
-    echo $filename . PHP_EOL;
+function show($filename)
+{
+    echo $filename.PHP_EOL;
 
     $factory = new ReaderFactory();
     $data = $factory->create($filename);
@@ -17,5 +18,5 @@ function show($filename) {
 /**
  * 入力ファイル
  */
-show(__DIR__ . '/music.txt');
-show(__DIR__ . '/music.xml');
+show(__DIR__.'/music.txt');
+show(__DIR__.'/music.xml');

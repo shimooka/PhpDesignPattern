@@ -1,22 +1,20 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Flyweight;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
 use DoYouPhp\PhpDesignPattern\Flyweight\FlyweightFactory\ItemFactory;
-
 
 function dumpData($data)
 {
     foreach ($data as $object) {
-        echo $object->getName() . PHP_EOL;
+        echo $object->getName().PHP_EOL;
         echo '-->商品番号：'.$object->getCode().PHP_EOL;
         echo '-->\\'.number_format($object->getPrice()).PHP_EOL;
     }
 }
 
-
-$factory = ItemFactory::getInstance(__DIR__ . '/data.txt');
+$factory = ItemFactory::getInstance(__DIR__.'/data.txt');
 
 /**
  * データを取得する

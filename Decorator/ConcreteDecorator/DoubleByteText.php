@@ -4,7 +4,6 @@ namespace DoYouPhp\PhpDesignPattern\Decorator\ConcreteDecorator;
 use DoYouPhp\PhpDesignPattern\Decorator\Decorator\TextDecorator;
 use DoYouPhp\PhpDesignPattern\Decorator\Component\Text;
 
-
 /**
  * TextDecoratorクラスの実装クラスです
  */

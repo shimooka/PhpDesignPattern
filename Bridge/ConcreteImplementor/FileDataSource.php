@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Bridge\ConcreteImplementor;
 
 use DoYouPhp\PhpDesignPattern\Bridge\Implementor\DataSource;
 
-
 class FileDataSource implements DataSource
 {
     /**

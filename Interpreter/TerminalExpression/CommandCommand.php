@@ -21,7 +21,7 @@ class CommandCommand implements Command
         } elseif ($current_command === 'date') {
             echo date('Y/m/d H:i:s').PHP_EOL;
         } elseif ($current_command === 'line') {
-            echo '--------------------' . PHP_EOL;
+            echo '--------------------'.PHP_EOL;
         } else {
             throw new \RuntimeException('invalid command ['.$current_command.']');
         }

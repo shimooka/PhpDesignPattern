@@ -3,7 +3,6 @@ namespace DoYouPhp\PhpDesignPattern\Flyweight\FlyweightFactory;
 
 use DoYouPhp\PhpDesignPattern\Flyweight\ConcreteFlyweight\Item;
 
-
 /**
  * FlyweightFactoryに相当する
  * また、Singletonパターンにもなっている
@@ -46,7 +45,7 @@ class ItemFactory
         if (array_key_exists($code, $this->pool)) {
             return $this->pool[$code];
         } else {
-            return null;
+            return;
         }
     }
 

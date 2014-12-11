@@ -11,7 +11,7 @@ class Listing
      * コンストラクタ
      * @param $source_name ファイル名
      */
-    public function __construct($data_source)
+    public function __construct(DataSource $data_source)
     {
         $this->data_source = $data_source;
     }
