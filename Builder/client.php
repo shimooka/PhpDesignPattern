@@ -1,11 +1,10 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Builder;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
 use DoYouPhp\PhpDesignPattern\Builder\Director\NewsDirector;
 use DoYouPhp\PhpDesignPattern\Builder\ConcreteBuilder\RssNewsBuilder;
-
 
 $builder = new RssNewsBuilder();
 $url = 'http://www.php.net/news.rss';

@@ -4,7 +4,6 @@ namespace DoYouPhp\PhpDesignPattern\Builder\ConcreteBuilder;
 use DoYouPhp\PhpDesignPattern\Builder\Model\News;
 use DoYouPhp\PhpDesignPattern\Builder\Builder\NewsBuilder;
 
-
 /**
  * ConcreteBuilderクラスに相当する
  */
