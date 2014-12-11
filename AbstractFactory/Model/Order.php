@@ -1,6 +1,9 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\AbstractFactory\Model;
 
+/**
+ * 1つの注文を表すクラス
+ */
 class Order
 {
     private $id;

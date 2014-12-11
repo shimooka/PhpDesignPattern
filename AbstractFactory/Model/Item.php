@@ -1,6 +1,9 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\AbstractFactory\Model;
 
+/**
+ * 1つの商品を表すクラス
+ */
 class Item
 {
     private $id;
