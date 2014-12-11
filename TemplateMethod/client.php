@@ -3,8 +3,8 @@ namespace DoYouPhp\PhpDesignPattern\TemplateMethod;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
-use DoYouPhp\PhpDesignPattern\TemplateMethod\ListDisplay;
-use DoYouPhp\PhpDesignPattern\TemplateMethod\TableDisplay;
+use DoYouPhp\PhpDesignPattern\TemplateMethod\ConcreteClass\ListDisplay;
+use DoYouPhp\PhpDesignPattern\TemplateMethod\ConcreteClass\TableDisplay;
 
 
 $data = array('Design Pattern',

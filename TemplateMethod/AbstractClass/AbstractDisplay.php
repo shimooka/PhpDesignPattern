@@ -1,5 +1,5 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\TemplateMethod;
+namespace DoYouPhp\PhpDesignPattern\TemplateMethod\AbstractClass;
 
 /**
  * AbstractClassクラスに相当する

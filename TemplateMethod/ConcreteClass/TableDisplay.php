@@ -1,7 +1,7 @@
 <?php
-namespace DoYouPhp\PhpDesignPattern\TemplateMethod;
+namespace DoYouPhp\PhpDesignPattern\TemplateMethod\ConcreteClass;
 
-use DoYouPhp\PhpDesignPattern\TemplateMethod\AbstractDisplay;
+use DoYouPhp\PhpDesignPattern\TemplateMethod\AbstractClass\AbstractDisplay;
 
 
 /**
