@@ -12,7 +12,7 @@ class SalesmanIterator extends \FilterIterator
 
     public function accept()
     {
-        $employee = $this->current();
+        $employee = $this->getInnerIterator()->current();
 
         return ($employee->getJob() === 'SALESMAN');
     }
