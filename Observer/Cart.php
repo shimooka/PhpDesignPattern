@@ -1,6 +1,7 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\Observer;
 
+
 /**
  * Subjectクラス＋ConcreteSubjectクラスに相当する
  */
@@ -64,5 +65,18 @@ class Cart
         foreach ($this->listeners as $listener) {
             $listener->update($this);
         }
+    }
+
+    public function show()
+    {
+        $line = str_repeat('-', 40).PHP_EOL;
+
+        echo $line;
+        echo "商品名\t個数".PHP_EOL;
+        echo $line;
+        foreach ($this->getItems() as $item_name => $quantity) {
+            echo $item_name."\t".$quantity.PHP_EOL;
+        }
+        echo $line;
     }
 }
